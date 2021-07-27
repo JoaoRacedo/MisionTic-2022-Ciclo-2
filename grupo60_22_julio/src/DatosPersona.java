@@ -9,6 +9,10 @@ public class DatosPersona {
         this.lugar_nacimiento = lugar_nacimiento;
     }
 
+    public DatosPersona(){
+        
+    }
+
     public String getNombre() {
         return nombre;
     }

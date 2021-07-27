@@ -6,8 +6,13 @@ public class principal {
         DatosPersona[] datos = new DatosPersona[n];
         for(int i = 0;i<n;i++){
             String[] datos_persona = sc.nextLine().split(" ");
-            datos[i] = new DatosPersona(datos_persona[0], 
-                        Double.parseDouble(datos_persona[1]),datos_persona[2]);
+            //datos[i] = new DatosPersona(datos_persona[0], 
+            //           Double.parseDouble(datos_persona[1]),datos_persona[2]);
+            DatosPersona temp = new DatosPersona();
+            temp.setNombre(datos_persona[0]);
+            temp.setEdad(Double.parseDouble(datos_persona[1]));
+            temp.setLugar_nacimiento(datos_persona[2]);
+            datos[i] = temp;
         }
 
         for(int i = 0; i<n;i++){
