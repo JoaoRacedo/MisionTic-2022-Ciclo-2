@@ -89,8 +89,9 @@
             <Button fx:id="ShowData" layoutX="476.0" layoutY="160.0" mnemonicParsing="false" onAction="#clickData" text="Button" />
             <TextField fx:id="inputData" layoutX="240.0" layoutY="107.0" />
             <Label layoutX="304.0" layoutY="80.0" text="Texto" />
-            <TextArea fx:id="outputData" layoutX="220.0" layoutY="145.0" prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="outputData" layoutX="91.0" layoutY="163.0" prefHeight="164.0" prefWidth="172.0" />
             <Button fx:id="clickProcess" layoutX="476.0" layoutY="219.0" mnemonicParsing="false" onAction="#process" text="Button" />
+            <TextArea fx:id="outputData2" layoutX="296.0" layoutY="163.0" prefHeight="164.0" prefWidth="172.0" />
          </children>
     </AnchorPane>
   </children>

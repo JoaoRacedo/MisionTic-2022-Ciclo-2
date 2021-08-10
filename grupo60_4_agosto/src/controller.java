@@ -16,6 +16,9 @@ public class controller {
     private TextArea outputData;
 
     @FXML
+    private TextArea outputData2;
+
+    @FXML
     void clickData(ActionEvent event) {
         String test = String.join(" ", inputData.getText());
         outputData.setText(outputData.getText() + test + "\n");
@@ -25,8 +28,13 @@ public class controller {
     void process(ActionEvent event) {
         String datos = outputData.getText().strip();
         String[] datos_sep = datos.split("\n");
-        for(int i = 0; i < datos_sep.length; i++)
+        int count = 0;
+        for(int i = 0; i < datos_sep.length; i++){
             System.out.println(datos_sep[i]);
+            count++;
+        }
+        outputData2.setText(String.valueOf(count));
+        
     }
     
 
